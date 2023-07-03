@@ -1,0 +1,17 @@
+{
+    "name": "am/am",
+    "autoload": {
+        "psr-4": {
+            "am\\": "src/am"
+        }
+    },
+    "authors": [
+        {
+            "name": "matthewknight",
+            "email": "matthew@thinkplaymake.co"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    }
+}

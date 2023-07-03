@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^index.html$ index.php?path=index.html
+RewriteRule ^casestudy-gofrendly.html$ index.php?path=casestudy-gofrendly.html

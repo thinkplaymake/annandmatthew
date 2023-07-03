@@ -1,0 +1,8 @@
+How to Deploy:
+
+1/ Make any local changes as required.
+2/ wget --no-clobber --convert-links -nH --cut-dirs=2 -r -p -E -e robots=off -U mozilla http://localhost/annandmatthew.co/www/ -P /Applications/MAMP/htdocs/annandmatthew.co/docs
+3/ git add, commit, push
+
+
+

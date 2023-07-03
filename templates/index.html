@@ -23,11 +23,11 @@
 		</h2>
 		
 		<div class="biglist">
-			<a href="#">Strategy &amp; Positioning</a>
-			<a href="#">Personality &amp; Tone of Voice </a>
-			<a href="#">Communications Planning</a>
-			<a href="#">Content Direction</a>
-			<a href="#">Brand Editorial</a>				
+			Strategy &amp; Positioning<br/>
+			Personality &amp; Tone of Voice<br/>
+			Communications Planning<br/>
+			Content Direction<br/>
+			Brand Editorial<br/>	
 		</div>
 		
 		<p>We don't do big fluffy frameworks<br/>and painful powerpoint decks.</p>
@@ -49,13 +49,7 @@
 		</h2>
 		
 		<div class="iconlist">
-			<a href="#" style="background-image:url(img/client-alva.png);"><span>Alva Labs</span></a>
-			<a href="casestudy-gofrendly.html" style="background-image:url(img/client-gf.png);"><span>GoFrendly</span></a>
-			<a href="#" style="background-image:url(img/client-build.png);"><span>Build Studios</span></a>
-			<a href="#" style="background-image:url(img/client-sana.png);"><span>Sana AI</span></a>
-			<a href="#" style="background-image:url(img/client-klarna.png);"><span>Klarna</span></a>
-			
-											
+			{% include '_clientlist.html' %}
 		</div>
 		
 		<p>We work with scale-ups who need to refine their story before investment or growth. Och vi älskar Nordic businesses expanding to the UK.</p>
@@ -96,7 +90,7 @@
 	</div>
 </div>
 
-<div class="container" class="dark">
+<div class="container" class="dark" id="contact">
 	<div class="inner">
 	<!-- Your content goes here -->
 	<!-- Example: -->
@@ -107,14 +101,19 @@
 		
 		<p>To understand if we can help you, let's have a chat around where your business is today, and where you want to be tommorrow.</p>
 		
-		<a href="#" class="bigbutton">Schedule a chat</a>
+		<!-- Calendly link widget begin -->
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+		<a href="" class="bigbutton" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/theindependencyco/ann-matthew-discovery-call'});return false;">Schedule a Chat</a>
+		<!-- Calendly link widget end -->
+
 
 	</div>
 	
 	<div class="inner footer" style="margin-top: 200px">
 		<strong>Ann + Matthew.</strong><br/>
 		A strategic storytelling superteam.<br/>
-		<a href="#">Contact Us</a>. <a href="#">Case Studies.</a>.
+		<a href="index.html#contact">Contact Us.</a> <a href="work.html">Case Studies.</a>
 	</div>
 </div>
 {% endblock %}

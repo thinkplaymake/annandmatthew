@@ -40,7 +40,7 @@
 	h1, .h1 { font-family: 'Varela Round', sans-serif; font-size: 65px; color:var(--light) }
 	h2, .h2 { font-family: 'Varela Round', sans-serif; font-size: 20px;  }
 	
-	.biglist a { display: block; color:inherit; font-size: 45px; font-family: 'Varela Round', sans-serif; }
+	.biglist { display: block; color:inherit; font-size: 45px; font-family: 'Varela Round', sans-serif; }
 	.iconlist { display: flex; gap: 15px; }
 	.iconlist a { display: block; background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; gap: 15px; width: 100%; min-width: 100px; min-height: 150px  }
 	.iconlist a span { display: none; }
@@ -62,6 +62,8 @@
 		#supernav .inner { display: flex; justify-content: space-between; }	
 		#supernav .inner .options { padding-top: 15px; }
 	}
+	
+	.container.image { background-size: cover; background-position: 50% 50%; min-height: 600px; }
 			
 			
 			
@@ -74,8 +76,8 @@
 			<div class="logo"><a href="index.html">A+M</a></div>
 			<div class="options">
 				<a href="index.html">Home</a>
-				<a href="http://localhost/annandmatthew.co/www/work.html">Work</a>
-				<a href="http://localhost/annandmatthew.co/www/contact.html">Contact</a>
+				<a href="work.html">Work</a>
+				<a href="index.html#contact">Contact</a>
 										
 				
 			</div>
@@ -105,11 +107,11 @@
 		</h2>
 		
 		<div class="biglist">
-			<a href="index.html#">Strategy &amp; Positioning</a>
-			<a href="index.html#">Personality &amp; Tone of Voice </a>
-			<a href="index.html#">Communications Planning</a>
-			<a href="index.html#">Content Direction</a>
-			<a href="index.html#">Brand Editorial</a>				
+			Strategy &amp; Positioning<br/>
+			Personality &amp; Tone of Voice<br/>
+			Communications Planning<br/>
+			Content Direction<br/>
+			Brand Editorial<br/>	
 		</div>
 		
 		<p>We don't do big fluffy frameworks<br/>and painful powerpoint decks.</p>
@@ -131,14 +133,11 @@
 		</h2>
 		
 		<div class="iconlist">
-			<a href="index.html#" style="background-image:url(img/client-alva.png);"><span>Alva Labs</span></a>
-			<a href="casestudy-gofrendly.html" style="background-image:url(img/client-gf.png);"><span>GoFrendly</span></a>
-			<a href="index.html#" style="background-image:url(img/client-build.png);"><span>Build Studios</span></a>
-			<a href="index.html#" style="background-image:url(img/client-sana.png);"><span>Sana AI</span></a>
-			<a href="index.html#" style="background-image:url(img/client-klarna.png);"><span>Klarna</span></a>
-			
-											
-		</div>
+			<a href="casestudy-alva.html" style="background-image:url(img/client-alva.png);"><span>Alva Labs</span></a>
+<a href="casestudy-gofrendly.html" style="background-image:url(img/client-gf.png);"><span>GoFrendly</span></a>
+<a href="casestudy-buildstudios.html" style="background-image:url(img/client-build.png);"><span>Build Studios</span></a>
+<a href="casestudy-sanaai.html" style="background-image:url(img/client-sana.png);"><span>Sana AI</span></a>
+<a href="casestudy-klarna.html" style="background-image:url(img/client-klarna.png);"><span>Klarna</span></a>		</div>
 		
 		<p>We work with scale-ups who need to refine their story before investment or growth. Och vi älskar Nordic businesses expanding to the UK.</p>
 		
@@ -178,7 +177,7 @@
 	</div>
 </div>
 
-<div class="container" class="dark">
+<div class="container" class="dark" id="contact">
 	<div class="inner">
 	<!-- Your content goes here -->
 	<!-- Example: -->
@@ -189,14 +188,19 @@
 		
 		<p>To understand if we can help you, let's have a chat around where your business is today, and where you want to be tommorrow.</p>
 		
-		<a href="index.html#" class="bigbutton">Schedule a chat</a>
+		<!-- Calendly link widget begin -->
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+		<a href="index.html" class="bigbutton" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/theindependencyco/ann-matthew-discovery-call'});return false;">Schedule a Chat</a>
+		<!-- Calendly link widget end -->
+
 
 	</div>
 	
 	<div class="inner footer" style="margin-top: 200px">
 		<strong>Ann + Matthew.</strong><br/>
 		A strategic storytelling superteam.<br/>
-		<a href="index.html#">Contact Us</a>. <a href="index.html#">Case Studies.</a>.
+		<a href="index.html#contact">Contact Us.</a> <a href="work.html">Case Studies.</a>
 	</div>
 </div>
 </body>

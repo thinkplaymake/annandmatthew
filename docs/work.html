@@ -84,7 +84,64 @@
 		</div>
 	</div>
 	
-	{% block main %}
-	{% endblock %}
+	
+<style>
+	.clientlist { width: 100%; display: flex;  gap: 20px;  }
+	.clientlist a { width: 100%; display: block; background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; height: 100px;  }
+	.clientlist a span { display: none; }
+	
+</style>
+
+
+<div class="container dark">
+	<div class="inner">
+	<!-- Your content goes here -->
+	<!-- Example: -->
+		<h1>
+		  It's official.<br/>
+		  We only work<br/>
+		  with lovely clients.<br/>
+		</h1>
+		
+		<p style="font-size: 20px; font-weight: bold;">The list of teams we're collaborating with is growing every month - here are a curated few to give you an idea of the work we do.</p>
+	</div>
+</div>
+
+<div class="container dark">
+	<div class="inner clientlist">
+		<a href="casestudy-alva.html" style="background-image:url(img/client-alva.png);"><span>Alva Labs</span></a>
+<a href="casestudy-gofrendly.html" style="background-image:url(img/client-gf.png);"><span>GoFrendly</span></a>
+<a href="casestudy-buildstudios.html" style="background-image:url(img/client-build.png);"><span>Build Studios</span></a>
+<a href="casestudy-sanaai.html" style="background-image:url(img/client-sana.png);"><span>Sana AI</span></a>
+<a href="casestudy-klarna.html" style="background-image:url(img/client-klarna.png);"><span>Klarna</span></a>	</div>
+</div>
+
+
+<div class="container" class="dark" id="contact">
+	<div class="inner">
+	<!-- Your content goes here -->
+	<!-- Example: -->
+		<img src="img/icon-chat.png" class="icon">
+		<h2>
+		  LESS FLUFF, MORE CONVERSATION.
+		</h2>
+		
+		<p>To understand if we can help you, let's have a chat around where your business is today, and where you want to be tommorrow.</p>
+		
+		<!-- Calendly link widget begin -->
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+		<a href="work.html" class="bigbutton" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/theindependencyco/ann-matthew-discovery-call'});return false;">Schedule a Chat</a>
+		<!-- Calendly link widget end -->
+
+
+	</div>
+	
+	<div class="inner footer" style="margin-top: 200px">
+		<strong>Ann + Matthew.</strong><br/>
+		A strategic storytelling superteam.<br/>
+		<a href="index.html#contact">Contact Us.</a> <a href="work.html">Case Studies.</a>
+	</div>
+</div>
 </body>
 </html>

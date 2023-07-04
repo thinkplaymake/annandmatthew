@@ -1,5 +1,5 @@
 RewriteEngine On
 RewriteRule ^index.html$ index.php?path=index.html
 RewriteRule ^work.html$ index.php?path=work.html
-
 RewriteRule ^casestudy-(.*).html$ index.php?path=casestudy-$1.html
+RewriteRule ^sitemap.txt$ index.php?path=sitemap.txt
